@@ -22,7 +22,6 @@ def test_skip():
     
 @pytest.mark.skipif(sys.platform == "windows", reason="This does not work on my platform")
 def test_onlyplatform():
-
     print(sys.platform)
     assertion_value = 3
     assert 2 == assertion_value, "Wrong value"
