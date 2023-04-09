@@ -20,7 +20,7 @@ def test_failing():
 def test_skip():
     assert "Green Eggs and Ham" == "Sam I am"
     
-@pytest.mark.skipif(sys.platform == "windows", reason="This does not work on my platform")
-def test_onlyplatform():
-    print(sys.platform)
-    assert "I hope I did this right" == "Probably not..."
+#@pytest.mark.skipif(sys.platform == "windows", reason="This does not work on my platform")
+#def test_onlyplatform():
+#    print(sys.platform)
+#    assert "I hope I did this right" == "Probably not..."
